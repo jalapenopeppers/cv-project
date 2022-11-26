@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 class InputElement extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class InputElement extends React.Component {
     this.setState({
       text: e.target.value
     });
-    console.log(e.target.value);
+    // console.log(e.target.value);
   }
 
   onClick = (e) => {
@@ -60,22 +60,22 @@ class InputElement extends React.Component {
       if (type === 'textarea') {
         // Modify text so it renders correctly
         let strArr = this.state.text.split("");
-        console.log(strArr);
+        // console.log(strArr);
         displayInfo = [];
         let currStr = '';
         let paragraphIndex = 0;
         for (let i = 0; i < strArr.length; i++) {
           if (strArr[i] !== '\n') {
-            console.log('add char');
+            // console.log('add char');
             currStr = currStr.concat(strArr[i]);
 
             if (i === strArr.length - 1) {
-              console.log('made a word');
+              // console.log('made a word');
               displayInfo.push(<p key={paragraphIndex}>{currStr}</p>);
               paragraphIndex++;
             } 
           } else {
-            console.log('made a word');
+            // console.log('made a word');
             displayInfo.push(<p key={paragraphIndex}>{currStr}</p>);
             paragraphIndex++;
             currStr = '';

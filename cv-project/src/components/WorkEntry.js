@@ -7,13 +7,13 @@ class WorkEntry extends React.Component {
   }
 
   render() {
-    const { companyName, timePeriod, roleName } = this.props;
+    const { companyName, timePeriod, roleName, achievements } = this.props;
     return(
       <li>
         <InputElement type="text" placeholder={companyName}/>
         <InputElement type="text" placeholder={timePeriod}/>
         <InputElement type="text" placeholder={roleName}/>
-        <InputElement type="textarea" placeholder="-caca"/>
+        <InputElement type="textarea" placeholder={achievements}/>
       </li>
     );
   }

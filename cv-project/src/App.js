@@ -6,10 +6,6 @@ import EducationSection from './components/EducationSection';
 import WorkSection from './components/WorkSection';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="app">

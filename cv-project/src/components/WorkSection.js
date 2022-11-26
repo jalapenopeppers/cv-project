@@ -15,6 +15,7 @@ class WorkSection extends React.Component {
           companyName="Company"
           timePeriod="Time period"
           roleName="Role"
+          achievements="Achievements:"
           key={id}
           />
         },
@@ -32,6 +33,7 @@ class WorkSection extends React.Component {
           companyName="Company"
           timePeriod="Time period"
           roleName="Role"
+          achievements="Achievements:"
           key={id}
           />
       }),
